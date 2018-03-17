@@ -1,0 +1,200 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: black;
+}
+
+.topnav
+{
+	background-color: black;
+	margin: -8px;
+	overflow: hidden;
+}
+
+.topnav a
+{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 20px;
+	display: block;
+	float: left;
+}
+
+.topnav a:hover
+{
+	background-color: white;
+	color: black;
+	transition-duration: 0.5s;
+	font-size: 20px;
+}
+
+.topnav .icon
+{
+	display: none;
+}
+
+.info-container
+{
+	margin-top: 20px;
+	color: white;
+	border-style: solid;
+	border-color: goldenrod;
+	float: left;
+}
+
+.info-image img
+{
+	float: left;
+	width: 60%;
+}
+
+.info-describe
+{
+	float: left;
+	margin-left: 20px;
+	font-size: 1.5vw;
+	width: 30%;
+	text-align: left;
+}
+
+.big-title
+{
+	font-family: 'Questrial', sans-serif;
+}
+
+.description
+{
+	font-size: 1.2vw;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.free-play
+{
+	border-radius: 20px;
+	padding: 15px;
+	font-size: 1.2vw;
+	font-weight: bold;
+}
+
+.free-play a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.free-play:hover
+{
+	background-color: orange;
+	transition-duration: 0.5s;
+}
+
+.info2-container
+{
+	clear: both;
+}
+
+.info2-image p
+{
+	float: left;
+	text-decoration: underline;
+	font-family: 'Questrial', sans-serif;
+	margin-left: 20px;
+	font-size: 1.5vw;
+	color: white;
+	width: 40%;
+}
+
+.info2-image p.small
+{
+	font-size: 1vw;
+	font-family: 'Cormorant Garamond', serif;
+	text-decoration: none;
+}
+
+.info2-image img
+{
+	width: 50%;
+	margin-top: 20px;
+	float: left;
+}
+
+.footer
+{
+	clear: both;
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	margin:-8px;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 600px)
+{
+	.topnav a:not(:first-child)
+	{
+		display: none;
+	}
+	.topnav a.icon
+	{
+		display: block;
+		float: right;
+	}
+	.info-describe
+	{
+		margin-left: 5px;
+		font-size: 15px;
+		width: 90%;
+	}
+	.description
+	{
+		font-size: 10px;
+	}
+	.free-play
+	{
+		font-size: 10px;
+		margin-bottom: 5px;
+	}
+	.info-image img
+	{
+		width: 100%;
+	}
+	.info2-image p,.info2-image p.small
+	{
+		clear: both;
+		width: 90%;
+	}
+	.info2-image img
+	{
+		width: 100%;
+	}
+	.info2-image p
+	{
+		font-size: 20px;
+	}
+	.info2-image p.small
+	{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	.topnav.responsive
+	{
+		position: relative;
+	}
+	.topnav.responsive a
+	{
+		display: block;
+		float: none;
+		text-align: left;
+		transition-duration: 0.5s;
+	}
+}
